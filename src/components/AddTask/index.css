@@ -1,8 +1,8 @@
 .form-new-task-container {
     background-color: #000000;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 90vh;
     padding-top: 30px;
   }
@@ -11,9 +11,9 @@
     .form-new-task-container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding-top: 20px;
+      padding-top: 15px;
     }
   }
   
@@ -22,10 +22,9 @@
     flex-direction: column;
     justify-content: center;
     background-color: #ffffff;
-    margin-left: 30px;
-    margin-right: 30px;
     border: none;
     outline: none;
+    margin-right: 90px;
     border-radius: 8px;
     padding-left: 36px;
     padding-right: 36px;

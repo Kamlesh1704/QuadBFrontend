@@ -136,30 +136,6 @@ class AddTask extends Component {
               Add Task
             </button>
           </form>
-
-          <div className="new-task-container">
-            <h1 className="add-new-task-heading">New Tasks</h1>
-            {nothingToShow ? (
-              <div className="nothing-image-container">
-                <img
-                  src="https://img.freepik.com/free-vector/curiosity-child-concept-illustration_114360-14309.jpg?w=740&t=st=1701344214~exp=1701344814~hmac=bfbc288fe4a1316c81ed80665a5f2883932ae924590e5b67b4c0b84a3efc7728"
-                  alt="nothing to show"
-                  className="nothing-image"
-                />
-                <h1 className="nothing-text">Add Your First Task</h1>
-              </div>
-            ) : (
-              <ul className="new-task-list">
-                {taskList.map(eachTask => (
-                  <AddTaskItem
-                    key={eachTask.id}
-                    taskDetails={eachTask}
-                    onDelete={this.onDeleteTask}
-                  />
-                ))}
-              </ul>
-            )}
-          </div>
         </div>
       </div>
     )
